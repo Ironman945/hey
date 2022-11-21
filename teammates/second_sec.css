@@ -1,0 +1,45 @@
+*{
+    background-color: #522252;
+    color: white !important; 
+}
+.grid-container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    /* grid-template-columns: 1fr 0.2fr 1fr;
+    grid-template-rows: repeat(3,1fr);    */
+    grid-template-areas: "imp     imp      imp"
+                         "st1     LINES    blank"
+                         "blank   LINES    st2"
+                         "st3     LINES    blank"
+                         "blank   LINES    st4"
+                         "st5     LINES    blank"
+                         "blank   LINES    st6";
+}
+.imp{
+    grid-area: imp;
+}
+.st1{
+    grid-area: st1;
+}
+.LINES{
+    grid-area: LINES;
+}
+.blank{
+    grid-area: blank;
+}
+.st2{
+    grid-area: st2;
+}
+.st3{
+    grid-area: st3;
+}
+.st4{
+    grid-area: st4;
+}
+.st5{
+    grid-area: st5;
+}
+.st6{
+    grid-area: st6;
+}
